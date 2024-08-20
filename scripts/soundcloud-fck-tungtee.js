@@ -1,3 +1,13 @@
+// ==UserScript==
+// @name         Soundcloud Fuck TungTee
+// @namespace    http://tampermonkey.net/
+// @version      2024-08-20
+// @description  Removing annoying tracks from "Tùng Tee - 0967671***"
+// @author       Zuko <tansautn@gmail.com>
+// @match        https://soundcloud.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=soundcloud.com
+// @grant        none
+// ==/UserScript==
 /*
  *          M""""""""`M            dP
  *          Mmmmmm   .M            88
@@ -13,18 +23,6 @@
  *          *    -  -  All Rights Reserved  -  -    *
  *          * * * * * * * * * * * * * * * * * * * * *
  */
-
-// ==UserScript==
-// @name         Soundcloud Fuck TungTee
-// @namespace    http://tampermonkey.net/
-// @version      2024-08-20
-// @description  Removing annoying tracks from "Tùng Tee - 0967671***"
-// @author       Zuko <tansautn@gmail.com>
-// @match        https://soundcloud.com/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=soundcloud.com
-// @grant        none
-// ==/UserScript==
-
 (function() {
     'use strict';
     function removeUnwantedItems() {
