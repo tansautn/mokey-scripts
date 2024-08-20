@@ -1,0 +1,462 @@
+/*
+ *          M""""""""`M            dP
+ *          Mmmmmm   .M            88
+ *          MMMMP  .MMM  dP    dP  88  .dP   .d8888b.
+ *          MMP  .MMMMM  88    88  88888"    88'  `88
+ *          M' .MMMMMMM  88.  .88  88  `8b.  88.  .88
+ *          M         M  `88888P'  dP   `YP  `88888P'
+ *          MMMMMMMMMMM    -*-  Created by Zuko  -*-
+ *
+ *          * * * * * * * * * * * * * * * * * * * * *
+ *          * -    - -   F.R.E.E.M.I.N.D   - -    - *
+ *          * -  Copyright © 2024 (Z) Programing  - *
+ *          *    -  -  All Rights Reserved  -  -    *
+ *          * * * * * * * * * * * * * * * * * * * * *
+ */
+
+/*
+    fa3f1e - orange
+    e342e3 - pink
+    3dbbf5 - blue
+    2492f2 - blue (darker)
+ */
+body{
+    background-color: #333;
+}
+.playControls {
+    background: #333;
+    font-family: Inter,sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.sc-classic .playControls__bg,
+.sc-classic .playControls__inner {
+    background-color: #333;
+    border-top: 1px solid #cecece;
+}
+.sc-classic .playbackSoundBadge__titleLink,
+.sc-classic .playbackSoundBadge__titleLink:visited {
+    font-size: 12px;
+    color:#cecece;
+}
+.sc-classic .skipControl__previous {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTcgNmgydjEySDdWNnptMiA2bDggNlY2bC04IDZ6IiBmaWxsPSIjZmZmIj48L3BhdGg+PC9zdmc+);
+    background-position: 40%;
+}
+.sc-classic .playControl {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTggNXYxNGwxMS03eiIvPjwvc3ZnPg==) no-repeat 55%;
+}
+.sc-classic .skipControl__next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgMThsOC02LTgtNnYxMnptOC0xMnYxMmgyVjZoLTJ6Ii8+PC9zdmc+);
+    background-position: 60%;
+}
+.sc-classic .repeatControl.m-none {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDhIOWE0IDQgMCAxIDAgMCA4aDZhNCA0IDAgMCAwIDIuMTA0LTcuNDAzbDEuNzctMS4xOC4wMi4wMThBNiA2IDAgMCAxIDE1IDE4SDlBNiA2IDAgMSAxIDkgNmgzVjRsNCAzLTQgM1Y4eiIvPjwvc3ZnPg==);
+}
+.sc-classic .shuffleControl::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEzLjU4NiAxN2wtOC04SDNWN2gzLjQxNGw4IDhIMTd2MmgtMy40MTR6TTMgMTVoMi41ODZsMi4yMDctMi4yMDcgMS40MTQgMS40MTQtMi41MDEgMi41MDEtLjI5My4yOTJIM3YtMnptMTQtNmgtMi41ODZsLTIuMjA3IDIuMjA3LTEuNDE0LTEuNDE0TDEzLjU4NiA3SDE3djJ6bTQgN2wtNCAzdi02bDQgM3ptMC04bC00IDNWNWw0IDN6Ii8+PC9zdmc+) !important;
+}
+.sc-classic .playbackTimeline__duration {
+    color: #cecece;
+}
+.sc-classic .volume__button::after {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgOWg0LjAwMkwxMiA1djE0Yy0yLjQ0Ni0yLjY2Ny0zLjc3OC00LTMuOTk4LTRINFY5em0xMCA0YTEgMSAwIDAgMCAwLTJWOWEzIDMgMCAwIDEgMCA2di0yem0wIDRhNSA1IDAgMCAwIDAtMTBWNWE3IDcgMCAwIDEgMCAxNHYtMnoiLz48L3N2Zz4=);
+}
+.sc-classic .volume__button {
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4IDEwLjU4NGwtMi4yOTMtMi4yOTEtMS40MTQgMS40MTQgMi4yOTMgMi4yOTEtMi4yOTEgMi4yOTEgMS40MTQgMS40MTUgMi4yOTItMi4yOTIgMi4yOTQgMi4yOTIgMS40MTQtMS40MTUtMi4yOTMtMi4yOTEgMi4yOTEtMi4yOS0xLjQxNC0xLjQxNS0yLjI5MiAyLjI5MXpNNCA5aDQuMDAyTDEyIDV2MTRjLTIuNDQ2LTIuNjY3LTMuNzc4LTQtMy45OTgtNEg0Vjl6Ii8+PC9zdmc+) no-repeat 0;
+}
+.sc-classic .volume__sliderWrapper {
+    color: #cecece;
+    background-color: #333;
+}
+.sc-classic .queue {
+    background-color: #333;
+}
+.sc-classic .queue__hide, .sc-classic .queue__hide:focus, .sc-classic .queue__hide:hover {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTkgNi40MUwxNy41OSA1IDEyIDEwLjU5IDYuNDEgNSA1IDYuNDEgMTAuNTkgMTIgNSAxNy41OSA2LjQxIDE5IDEyIDEzLjQxIDE3LjU5IDE5IDE5IDE3LjU5IDEzLjQxIDEyeiIvPgogICAgPC9nPgo8L3N2Zz4=);
+}
+.sc-classic .queue__hide, .sc-classic .queue__hide:focus, .sc-classic .queue__hide:hover {
+    height: 28px !important;
+    background-position: 50% !important;
+    background-repeat: no-repeat !important;
+    background-size: 24px 24px !important;
+    width: 32px;
+}
+.sc-classic .queueItemView.m-active, .sc-classic .queueItemView:hover {
+    background: #333;
+    color: #cecece;
+}
+.playbackSoundBadge__showQueue .playbackSoundBadge__queueIcon {
+    fill: #cecece !important;
+}
+.sc-classic .queue__itemWrapper {
+    background-color: #333;
+    color: #fff;
+}
+.sc-classic .queueItemView.m-active,
+.sc-classic .queueItemView:hover {
+    background: grey !important;
+    color: lightblue !important;
+}
+[class^="commentForm"] {
+    background-color: #111;
+    color: rgb(204, 204, 204),
+}
+.quotaMeterWrapper {
+    background-color: #111;
+}
+
+/* essentially body */
+#app {
+    background-color: #222222;
+}
+
+
+
+/* generalities */
+a:hover {
+    color: #fa3f1e;
+}
+.sc-button {
+    color: #cccccc;
+    background: #555;
+    border: 1px #777 solid;
+    box-shadow: none;
+    text-shadow: none;
+}
+.sc-button:hover{
+    color: #aaa;
+    background: #777;
+    border: 1px #3dbbf5 solid;
+}
+.sc-link-verylight {
+    color: #00aeff;
+}
+.sc-border-light-top {
+    color: #fa3f1e;
+}
+.sc-ministats {
+    color: #e342e3;
+}
+.sc-link-dark {
+    color: #3dbbf5;
+}
+.sc-link-dark strong {
+    color: #2492f2;
+}
+.sc-checkbox {
+    color: #e342e3;
+}
+/* right justified text (Refresh / View All / etc.) */
+.sc-type-h3 {
+    color: #3dbbf5;
+}
+
+
+/**
+ * Header Bar
+ */
+
+/* username */
+.userNav__username {
+    color: #3dbbf5;
+}
+.userNav__username:hover {
+    color: #e342e3;
+}
+
+
+
+/**
+ * Main Wrapper
+ */
+
+/* body */
+.l-content {
+    background-color: #111111;
+}
+/* footer wrapper */
+.l-footer {
+    background-color: #111;
+    color: fa3f1e;
+}
+
+
+
+/**
+ * Sidebar
+ */
+
+.sidebarHeader__actualTitle {
+    color: #3dbbf5;
+}
+
+
+
+/**
+ * Sound Lists
+ */
+
+/* song title and tags */
+.soundTitle__title {
+    color: #fa3f1e;
+}
+.soundTitle__title:hover {
+    color: #e342e3;
+}
+.soundTitle__title span {
+    color: #fa3f1e;
+}
+.soundTitle__title span:hover {
+    color: #e342e3;
+}
+.soundTitle__usernameText {
+    color: #3dbbf5;
+}
+.soundTitle__usernameText:hover {
+    color: #e342e3;
+}
+.soundTitle__tag {
+    color: #fa3f1e;
+    background-color: #222222;
+    border-style: none;
+}
+.soundTitle__tag:hover {
+    color: #3dbbf5;
+}
+/* time since posted */
+.relativeTime {
+    color: #3dbbf5;
+    background-color: #111111;
+}
+/* hover over username */
+.userAvatarBadge__usernameLink {
+    color: #3dbbf5;
+}
+
+/**
+ * Playlists
+ */
+
+/* individual tracklist rows */
+.compactTrackListItem {
+    color: #3dbbf5;
+}
+.compactTrackListItem:hover {
+    background-color: #333;
+}
+.compactTrackListItem__plays {
+    padding: 5px;
+    background-color: #222;
+}
+.compactTrackListItem__trackTitle {
+    color: #fa3f1e;
+}
+.compactTrackListItem__additional {
+    background: none;
+}
+
+
+
+/**
+ * Search Stuff
+ */
+
+/* search context */
+.search__headerInner {
+    background-color: #222222;
+}
+.searchOptions__title {
+    color: #3dbbf5;
+}
+.searchOptions__navigationLink {
+    color: #e342e3;
+}
+.searchOptions__scrollable {
+    background-color: #171717;
+}
+.searchOptions__filterCategory-text {
+    color: #e342e3;
+}
+.searchOptions__filterCategory-text:hover {
+    color: #3dbbf5;
+}
+.searchOptions__filtersTitle {
+    color: #3dbbf5;
+}
+.searchOptions__container {
+    background-color: #111111;
+}
+.searchTags__tag {
+    background-color: #222222;
+    border: none;
+    color: #e342e3;
+}
+.searchTags__title {
+    color: #3dbbf5;
+}
+/* search results */
+.resultCounts {
+    color: #fa3f1e; /* orange */
+}
+
+/* User info page */
+.userInfo__container a {
+    color: #3dbbf5;
+}
+
+.userInfo__container a:hover {
+    color: #fa3f1e;
+}
+.userInfo__title {
+    color: #fa3f1e;
+}
+
+.userInfo__description {
+    color: #e342e3;
+}
+
+
+
+
+
+.sound__soundActions {
+    background: none;
+}
+.soundActions {
+    background-color: #111;
+}
+.soundActions__purchaseLink {
+    color: #0ac6ff;
+}
+
+
+
+.commentPopover__body {
+    color: #44c4eb;
+}
+.playbackTitle__link {
+    color: #3dbbf5;
+}
+
+
+
+
+
+
+
+.userBadge__usernameLink {
+    color: #3dbbf5;
+}
+
+.g-nav-link {
+    color: #3dbbf5;
+}
+
+.g-nav-link:hover {
+    color: #fa3f1e;
+}
+
+.g-nav-item.active > .g-nav-link {
+    color: #ffe3ff;
+}
+
+
+
+.exploreSidebar__regularCategory {
+    color: #e342e3;
+}
+
+.exploreSidebar__regularCategory:hover {
+    color: #3dbbf5;
+}
+
+
+
+.userItem__details.sc-type-light {
+    color: #e342e3;
+}
+
+
+
+.explore__copy {
+    color: #e342e3;
+}
+
+.tabs__tabs {
+    background-color: #222222;
+}
+
+.widgetCustomization__options {
+    color: #e342e3;
+}
+
+
+.g-tabs-link {
+    color: red;
+}
+
+.g-modal-section {
+    background-color: #222222;
+}
+
+.g-modal-title-h2 {
+    color: #3dbbf5;
+}
+
+.addToPlaylistItem__count {
+    color: #29f516;
+}
+
+.addToPlaylistItem__actions {
+    background-color: none;
+}
+
+.addToPlaylistItem__content {
+    background: #222;
+}
+
+.textfield__label {
+    color: #3dbbf5;
+}
+
+
+
+.createPlaylist__buttonWrapper {
+    color: #e342e3;
+}
+
+.createPlaylistSuggestion__addContainer {
+    background: none;
+}
+
+.createPlaylist__suggestionsHeading {
+    color: #3dbbf5;
+}
+
+
+
+
+.tokenInput__label {
+    color: #3dbbf5;
+}
+
+.userNetworkTop__inner {
+    background-color: #333;
+}
+
+.userNetworkTop__title {
+    color: #3dbbf5;
+}
+
+
+
+.trackItem__additional {
+    background: none;
+}
+
+.trackItem.hover, .trackItem.active {
+    background: #333;
+}
+
