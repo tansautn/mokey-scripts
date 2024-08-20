@@ -62,9 +62,10 @@ Contributions are welcome! If you have a userscript or custom style you'd like t
 3. Submit a pull request with a description of your contribution.
 
 ## Use IDE to develop JS ?
-You will need a server to serve the developing js file.
-Then create empty script that require your editing file. Ex: `// @require      https://shx.test/script.js`.
-Full header will be like:
+1. You will need a server to serve the developing js file.
+2. Then create empty script that require your editing file.
++ Ex: `// @require      https://shx.test/script.js`.
++ Full header will be like:
 ```
 // ==UserScript==
 // @name         Hypeddit DownloadWallBypasser 2k24
@@ -81,7 +82,8 @@ Full header will be like:
 // @require      https://shx.test/script.js
 // ==/UserScript==
 ```
-The `shx.test` were run on my local development server.
++ The `shx.test` were run on my local development server.
+4. Don't forget clear cached script on your Monkey extension
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more details.
