@@ -23,21 +23,26 @@ Welcome to the **monkey-scripts** repository! This repository is dedicated to ho
 
 ## Userscripts
 
-Userscripts are small pieces of JavaScript code that run on specific webpages. They are typically used to add new features, modify existing ones, or automate repetitive tasks. These scripts are compatible with popular browser extensions such as [Tampermonkey](https://en.wikipedia.org/wiki/Tampermonkey), [Violentmonkey](https://en.wikipedia.org/wiki/Violentmonkey), and [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey).
+> These scripts are compatible with popular browser extensions such as [Tampermonkey](https://en.wikipedia.org/wiki/Tampermonkey), [Violentmonkey](https://en.wikipedia.org/wiki/Violentmonkey), and [Greasemonkey](https://en.wikipedia.org/wiki/Greasemonkey).
 
 ### Available Userscripts
+| **Userscript Name**           | **Description**                                                                                               |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------|
+| Soundcloud fck Tungtee         | Removing annoying tracks from "Tùng Tee - 0967671***". Music browsing becomes cleaner.                        |
+| *...*                          | *...*                                                                                                        |
 
-- **Soundcloud fck Tungtee**: Removing annoying tracks from "Tùng Tee - 0967671***". Music browsing more cleaner
-- *...*
 
 ## Custom Styles
 
-Custom styles are CSS rules that change the appearance of specific webpages. These styles can be applied using the Stylebot extension.
+> Custom styles are CSS rules that change the appearance of specific webpages. These styles can be applied using the Stylebot extension.
 
 ### Available Styles
 
-- **SC Darkmode**: Darkmode for soundcloud.com. Main part taken from somewhere. I did not remember. The modification of Playback controls, track comments was made by me.
-- *...*
+| **Style Name**                 | **Description**                                                                                               |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------|
+| SC Darkmode                    | Darkmode for soundcloud.com. Main part taken from somewhere. Modifications to playback controls and comments made by me. |
+| *...*                          | *...*                                                                                                        |
+
 
 ## Installation
 
