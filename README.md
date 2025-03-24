@@ -1,4 +1,4 @@
-<a href="http://zuko.pw/">
+<a href="http://zuko.pro/">
     <img src="https://avatars0.githubusercontent.com/u/6666271?v=3&s=96" alt="Z-Logo"
          title="Halu Universe" align="right" />
 </a>
@@ -28,7 +28,9 @@ Welcome to the **monkey-scripts** repository! This repository is dedicated to ho
 ### Available Userscripts
 | **Userscript Name**           | **Description**                                                                                               |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
-| Soundcloud fck Tungtee         | Removing annoying tracks from "Tùng Tee - 0967671***". Music browsing becomes cleaner.                        |
+| Soundcloud fck Tungtee         | Removing annoying tracks from "Tùng Tee - 0967671***". Music browsing becomes cleaner.                       |
+| Gist copy raw file             | Add "Copy Raw" button to github Gist                                                                         |
+| G-Drive auto download file     | Auto download from drive.google.com when visit single file url                                               |
 | *...*                          | *...*                                                                                                        |
 
 
