@@ -6,7 +6,7 @@
 
 # 💠 Zuko's Monkeys :diamond_shape_with_a_dot_inside:
 
-Welcome to the **monkey-scripts** repository! This repository is dedicated to hosting and sharing custom userscripts for Tampermonkey (or Greasemonkey, Violentmonkey) and custom styles for webpages using the Stylebot extension.
+Welcome to the **monkey-scripts** repository! This repository is dedicated to hosting and sharing custom userscripts for Tampermonkey (or Greasemonkey, Violentmonkey) and custom styles for webpages using the Stylebot or Stylus extension.
 
 ## What are user scripts?
 
