@@ -43,6 +43,7 @@ Welcome to the **monkey-scripts** repository! This repository is dedicated to ho
 | **Style Name**                 | **Description**                                                                                               |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------|
 | SC Darkmode                    | Darkmode for soundcloud.com. Main part taken from somewhere. Modifications to playback controls and comments made by me. |
+| Github Darkmode (with texture bg | Darkmode for github.com                                                                                    |
 | *...*                          | *...*                                                                                                        |
 
 
