@@ -26,6 +26,7 @@
 // @match        https://*.1w6mqs3panmvik7y1u8z.site/*
 // @match        https://*.fcg178.net/*
 // @match        *://*/index?Params=*
+// @icon         https://cdn.zuko.pro/img/icons/bee_wth-so-funny.gif
 // @grant        none
 // ==/UserScript==
 
