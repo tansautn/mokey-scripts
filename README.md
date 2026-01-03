@@ -31,6 +31,7 @@ Welcome to the **monkey-scripts** repository! This repository is dedicated to ho
 | Soundcloud fck Tungtee         | Removing annoying tracks from "Tùng Tee - 0967671***". Music browsing becomes cleaner.                       |
 | Gist copy raw file             | Add "Copy Raw" button to github Gist                                                                         |
 | G-Drive auto download file     | Auto download from drive.google.com when visit single file url                                               |
+| G-AI Studio-Account-Strictly   | Auto open account chooser when visiting Google AI studio (as i usually open from bookmark                    |
 | *...*                          | *...*                                                                                                        |
 
 
